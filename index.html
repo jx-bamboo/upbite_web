@@ -1,117 +1,133 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>upbite</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>upbite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
-    <style media="screen">
-      .bb{
-        border:0.1px solid red;
+  <script type="text/javascript">
+    window.onresize = function() {
+      var wid1 = document.getElementById('top-left').clientHeight;
+      var wid2 = document.getElementById('top-right').clientHeight;
+      var windowH = $(window).width();
+      if (wid1 != wid2) {
+        $('#top-right').css({
+          height: wid1
+        });
+      };
+      var wid3 = document.getElementById('bottomD').clientHeight;
+      var wid4 = document.getElementById('bottomR').clientHeight;
+      if (windowH < 767) {
+        $('#bottomD').css({
+          'line-height': 1 + 'em'
+        });
+        $('#bottomR').css({
+          height: wid3
+        });
+      } else {
+        $('#bottomD').css({
+          'line-height': 40 + 'px'
+        });
       }
-    </style>
-  </head>
-  <body>
+    }
+  </script>
+</head>
 
-    <div class="text-center" style="height:70px;width:100%;padding:0;margin:0;">
-      <!-- <img src="/img/logo.jpeg" alt=""> -->
-      <a href="#" style="font-size:32px;color:#0881a0;text-decoration:none;line-height:70px;">
+<body>
+  <div class="text-center" style="height:70px;width:100%;padding:0;margin:0;">
+    <!-- <img src="/img/logo.jpeg" alt=""> -->
+    <a href="#" style="font-size:32px;color:#0881a0;text-decoration:none;line-height:70px;">
         <img src="img/upbite.png" width="100" alt="">
         <!-- Upbite -->
       </a>
+  </div>
+  <div class="container-full" style="z-index:1;">
+    <div id="top-left" class="col-xs-12 col-sm-6" style="min-height:300px;background:#fcd53d;padding:40px;font-family:fantasy;text-align:justify;">
+      <p><h3 >Introduction</h3>
+      </p>
+      The Upbite Alliance is an organization that connects digital asset exchanges around the world, aiming to
+      seamlessly aggregate the overall liquidity and depth
+      of global digital assets and build a network of weakly
+      centralized alliances.In August 2019, the upbite
+      alliance was formally established,and consensus has
+      been reached on three exchanges across regions,
+      cultures and time. The first one is the WOEx exchange,
+      who has obtained the US msb license, which is issued
+      and supervised by the US Treasury; the second one is
+      the European exchange Alt-coin, which is licensed by
+      the Estonian government; and the third one is the
+      Australian agdaex exchange, has obtained the
+      Australian government license.Upbite is currently
+      actively expanding the scope of the alliance, and it is
+      expected that two licensed exchanges will join the
+      alliance at the end of the year.
     </div>
-    <div class="container-full">
-      <!-- <div class="row"> -->
-        <div class="col-xs-12 col-sm-6" style="background:#fcd53d;padding:20px;font-family:fantasy;text-align:justify;">
-          <p><h3 >Introduction</h3></p>
-          The Upbite Alliance is an organization that connects digital asset exchanges around the world, aiming to
-seamlessly aggregate the overall liquidity and depth
-of global digital assets and build a network of weakly
-centralized alliances.In August 2019, the upbite
-alliance was formally established,and consensus has
-been reached on three exchanges across regions,
-cultures and time. The first one is the WOEx exchange,
-who has obtained the US msb license, which is issued
-and supervised by the US Treasury; the second one is
-the European exchange Alt-coin, which is licensed by
-the Estonian government; and the third one is the
-Australian agdaex exchange, has obtained the
-Australian government license.Upbite is currently
-actively expanding the scope of the alliance, and it is
-expected that two licensed exchanges will join the
-alliance at the end of the year.
-        </div>
-        <div class="col-xs-12 col-sm-6 " style="background:#0ea7ce;padding:20px;font-family:fantasy;text-align:justify;">
-          <p><h3 >Advantage</h3></p>
-          Become a member of the Upbite Alliance, which is
-integrated into the Upbite global industrial cluster and
-can be used throughout the entire ecosystem through
-WTA Eco-Certification: Exchange Alliance Ecology,
-Upbite DApp Ecology, Blockchain Ecology Research
-Center, Mine Pool Ecology, Industry Incubation,
-Digital Asset Management, Public interest and community.
-Including the global exchange voting rights of the Union
-Exchange, global alliance dividends, and so on.
-All members of the Upbite Alliance share the depth of the
-exchange, open and interoperate with the platform resources,
-and create an ecological environment in which exchanges
-help each other, resulting in the free circulation of digital
-characters and the realization of a win-win situation for
-exchanges and users.
-        </div>
-      <!-- </div> -->
+    <div id="top-right" class="col-xs-12 col-sm-6 " style="min-height:300px;background:#0ea7ce;padding:40px;font-family:fantasy;text-align:justify;">
+      <p><h3 >Advantage</h3>
+      </p>
+      Become a member of the Upbite Alliance, which is
+      integrated into the Upbite global industrial cluster and
+      can be used throughout the entire ecosystem through
+      WTA Eco-Certification: Exchange Alliance Ecology,
+      Upbite DApp Ecology, Blockchain Ecology Research
+      Center, Mine Pool Ecology, Industry Incubation,
+      Digital Asset Management, Public interest and community.
+      Including the global exchange voting rights of the Union
+      Exchange, global alliance dividends, and so on.
+      All members of the Upbite Alliance share the depth of the
+      exchange, open and interoperate with the platform resources,
+      and create an ecological environment in which exchanges
+      help each other, resulting in the free circulation of digital
+      characters and the realization of a win-win situation for
+      exchanges and users.
     </div>
+  </div>
+  <div class="container-full" style="font-family:fantasy;text-align:justify;">
+    <div class="col-sm-12 col-xs-6" style="padding:0;">
+      <div id="bottomD" style="min-height:300px;color:#000;padding:40px;background:url('img/upbb.jpg') no-repeat; background-size: cover;font-size:16px;line-height:40px;">
+        <div class="text-center">
+          <h3 >WTA Introduction</h3>
+        </div>
+        The Upbite Exchange Alliance Eco-Certification, referred
+        to as “WTA”, was issued jointly by the exchanges in the
+        Upbite Alliance, with a total amount of 2.979 billion, and
+        guaranteed never to be issued. WTA can realize free
+        conversion and circulation within the alliance, share the
+        depth of trading on all major platforms, and more
+        effectively provide sufficient transaction liquidity,
+        and transactions can be circulated in a timely and
+        efficient manner. WTA will be given more usage scenarios,
+        such as community incentives, fee deductions, community
+        node rewards, and more.
+        We look forward to and welcome more partners to join the
+        Upbite Alliance in the future.
+      </div>
+    </div>
+    <div class="col-sm-12 col-xs-6" id="bottomR" style="background:#000;height:100vh">
+      <div class="text-center" style="color:#919191;padding:40px;">
+        <a href="https://www.woex.pro" target="_blank"><img src="img/woex.png" width="150" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="" target="_blank"><img src="img/altcoin.png" width="150" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.agdaex.com.au"><img src="img/agdaex.png" width="150" alt=""></a>
+      </div>
+      <div class="col-sm-12 text-center" style="color:#919191;font-size:16px;padding:40px 0;">
+        <div class="col-sm-6">
+          Copyright © 2019 Upbite - All Rights Reserved.
+        </div>
+        <div class="col-sm-6">
+          Powered by <span style="color:#10b5df;">upbite</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
 
-    <div class="container-full" style="min-height:100vh;background:#000;font-family:fantasy;text-align:justify;">
-      <!-- <div class="row"> -->
-        <div class="col-sm-12" style="padding:0;">
-          <!-- <div class="" style="color:#919191;padding:20px;background:url('img/upbb.webp')"> -->
-          <div class="" style="color:#000;padding:20px;background:url('img/upbb.jpg') no-repeat; background-size: cover;font-size:16px;">
-            <div class="text-center"><h3 >WTA Introduction</h3></div>
-            The Upbite Exchange Alliance Eco-Certification, referred
-to as “WTA”, was issued jointly by the exchanges in the
-Upbite Alliance, with a total amount of 2.979 billion, and
-guaranteed never to be issued. WTA can realize free
-conversion and circulation within the alliance, share the
-depth of trading on all major platforms, and more
-effectively provide sufficient transaction liquidity,
-and transactions can be circulated in a timely and
-efficient manner. WTA will be given more usage scenarios,
-such as community incentives, fee deductions, community
-node rewards, and more.
-We look forward to and welcome more partners to join the
-Upbite Alliance in the future.
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="text-center" style="color:#919191;padding:20px;">
-            <img src="img/woex.png" width="100" alt="">&nbsp;
-            <img src="img/altcoin.png" width="100" alt="">&nbsp;
-            <img src="img/agdaex.png" width="100" alt="">&nbsp;
-          </div>
-        </div>
-        <div class="col-sm-12 text-center" style="color:#919191;font-size:16px;padding:20px 0;">
-          <!-- <div class="row"> -->
-            <div class="col-sm-6">
-              Copyright © 2019 Upbite - All Rights Reserved.
-            </div>
-            <div class="col-sm-6">
-              Powered by <span style="color:#10b5df;">upbite</span>
-            </div>
-          <!-- </div> -->
-        </div>
-      <!-- </div> -->
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-  </body>
 </html>
